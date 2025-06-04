@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+    <div class="flex min-h-screen">
+        <aside class="w-64 bg-gray-800 text-white p-4">
+            <h2 class="text-2xl font-semibold mb-6">Menu</h2>
+            <nav class="space-y-2">
+                <a href="#" class="block py-2 px-4 rounded hover:bg-gray-700">Dashboard</a>
+                <a href="#" class="block py-2 px-4 rounded hover:bg-gray-700">Users</a>
+                <a href="#" class="block py-2 px-4 rounded hover:bg-gray-700">Settings</a>
+            </nav>
+        </aside>
+        <main class="flex-1 p-6">
+            <header class="mb-6">
+                <h1 class="text-3xl font-bold">Dashboard</h1>
+            </header>
+            <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-6">
+                <div class="bg-white p-4 rounded shadow">
+                    <h3 class="text-xl font-semibold mb-2">Statistic 1</h3>
+                    <p class="text-gray-600">Some value</p>
+                </div>
+                <div class="bg-white p-4 rounded shadow">
+                    <h3 class="text-xl font-semibold mb-2">Statistic 2</h3>
+                    <p class="text-gray-600">Another value</p>
+                </div>
+                <div class="bg-white p-4 rounded shadow">
+                    <h3 class="text-xl font-semibold mb-2">Statistic 3</h3>
+                    <p class="text-gray-600">More value</p>
+                </div>
+            </section>
+            <section>
+                <h2 class="text-2xl font-semibold mb-4">Recent Activity</h2>
+                <table class="min-w-full bg-white rounded shadow">
+                    <thead>
+                        <tr>
+                            <th class="py-2 px-4 border-b text-left">User</th>
+                            <th class="py-2 px-4 border-b text-left">Action</th>
+                            <th class="py-2 px-4 border-b text-left">Time</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="hover:bg-gray-50">
+                            <td class="py-2 px-4 border-b">Jane Doe</td>
+                            <td class="py-2 px-4 border-b">Created a post</td>
+                            <td class="py-2 px-4 border-b">2 hours ago</td>
+                        </tr>
+                        <tr class="hover:bg-gray-50">
+                            <td class="py-2 px-4 border-b">John Smith</td>
+                            <td class="py-2 px-4 border-b">Updated profile</td>
+                            <td class="py-2 px-4 border-b">5 hours ago</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
